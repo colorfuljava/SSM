@@ -25,6 +25,10 @@
             </list>
         </property>
     </bean>-->
+    <!--不对静态资源作处理-->
+    <mvc:default-servlet-handler/>
+
+    <!--如果使用注解,必须配置-->
     <mvc:annotation-driven/>
     <!-- 启动SpringMVC的注解功能，完成请求和注解POJO的映射
     -->
@@ -48,16 +52,16 @@
     </bean>
 
     <!-- 配置拦截器 -->
-    <!--<mvc:interceptors>
-        <mvc:interceptor>
-            &lt;!&ndash; <mvc:mapping path="/**"/>拦截所有 &ndash;&gt;
-            <mvc:mapping path="/user/**"/>
-            <mvc:mapping path="/role/**"/>
-            <mvc:mapping path="/function/**"/>
-            <mvc:mapping path="/news/**"/>
-            <mvc:mapping path="/img/**"/>
-            <bean class="com.crossoverJie.intercept.Intercept"></bean>
-        </mvc:interceptor>
-    </mvc:interceptors>-->
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--&lt;!&ndash; <mvc:mapping path="/**"/>拦截所有 &ndash;&gt;-->
+            <!--<mvc:mapping path="/user/**"/>-->
+            <!--<mvc:mapping path="/role/**"/>-->
+            <!--<mvc:mapping path="/function/**"/>-->
+            <!--<mvc:mapping path="/news/**"/>-->
+            <!--<mvc:mapping path="/img/**"/>-->
+            <!--<bean class="com.bart.intercept.Intercept"></bean>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 
 </beans>

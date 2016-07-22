@@ -28,11 +28,8 @@ public class IndexController {
     public String index(@RequestParam(value = "page", required = false, defaultValue = "1") int page,
                         HttpServletRequest request, Model model){
 
-        List<User> userList = userService.getAllUser();
 
-        model.addAttribute("userList",userList);
-
-
+        System.out.println(        request.getContextPath());
         return "index";
     }
 }

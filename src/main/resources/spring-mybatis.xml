@@ -23,12 +23,12 @@
         <property name="password" value="${jdbc_password}" />
 
         <!-- 配置初始化大小、最小、最大 -->
-        <property name="initialSize" value="3" />
-        <property name="minIdle" value="3" />
-        <property name="maxActive" value="20" />
+        <property name="initialSize" value="${initialSize}" />
+        <property name="minIdle" value="${minIdle}" />
+        <property name="maxActive" value="${maxActive}" />
 
         <!-- 配置获取连接等待超时的时间 -->
-        <property name="maxWait" value="60000" />
+        <property name="maxWait" value="${maxWait}" />
 
         <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
         <property name="timeBetweenEvictionRunsMillis" value="60000" />

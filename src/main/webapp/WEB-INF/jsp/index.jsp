@@ -2,13 +2,14 @@
 <%--引入JSTL核心标签库 --%>
 
 <%
-    String path = request.getContextPath()+"/src/main/webapp";
+    String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="zh" class="no-js">
 <head>
+    <base href="<%=basePath%>"></head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,21 +27,21 @@
         <div class="mockup-content">
 
             <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
-                <button type="button">Login</button>
+                <button type="button">Sign In</button>
                 <div class="morph-content">
                     <div>
                         <div class="content-style-form content-style-form-1">
                             <span class="icon icon-close">Close the dialog</span>
 
-                            <h2>Login</h2>
+                            <h2>Sign In</h2>
 
                             <form>
-                                <p><label>Email</label><input type="text" value="../.."/></p>
+                                <p><label>Email</label><input type="text" /></p>
 
-                                <p><label>Password</label><input type="password"/></p>
+                                <p><label>Password</label><input type="password" /></p>
 
                                 <p>
-                                    <button>Login</button>
+                                    <button>Sign In</button>
                                 </p>
                             </form>
                         </div>
@@ -51,7 +52,7 @@
             <strong class="joiner">or</strong>
 
             <div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-                <button type="button">Signup</button>
+                <button type="button">Sign Up</button>
                 <div class="morph-content">
                     <div>
                         <div class="content-style-form content-style-form-2">
@@ -70,7 +71,6 @@
                                     <button>Sign Up</button>
                                 </p>
                             </form>
-
                         </div>
                     </div>
                 </div>
